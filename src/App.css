@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.App {
+  max-width: 1170px;
+  margin-inline: auto;
+  text-align: center;
+
+}
+
+.App h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  height: 40px;
+  gap: 20px;
+
+}
+
+form input {
+  flex-basis: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+
+form button {
+  flex-basis: 20%;
+  background: #0e0e0e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+form button:active {
+  transform: scale(0.95);
+  border: 2px solid grey;
+}
+
+.outerDiv ul {
+  margin: 2em 0 2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.outerDiv ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 15px;
+  border-radius: 5px;
+  border: 1px solid #363636;
+}
+
+.outerDiv ul li span {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.completeToDo {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
